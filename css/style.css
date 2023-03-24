@@ -602,6 +602,45 @@ h2 {
   color: #ffffff;
 }
 
+.footer-subscribe {
+  display: flex;
+  column-gap: 24px;
+}
+
+.contact-form-input-footer {
+  padding-left: 16px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-header-first-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  color: var(--text-header-first-color);
+  background: var(--brand-logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background: var(--hover-btn-portfolio-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -698,7 +737,8 @@ h2 {
 }
 
 .contact-form-input:focus,
-.contact-form-message:focus {
+.contact-form-message:focus,
+.contact-form-input-footer:focus {
   outline: none;
   border-color: var(--brand-logo-color);
 }
